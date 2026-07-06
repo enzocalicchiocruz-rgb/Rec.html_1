@@ -1,55 +1,219 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <!-- Configurações básicas de codificação e responsividade -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Título personalizado da aba do navegador -->
-    <title>Sinergia Digital: Empatia e Cooperação</title>
-    <!-- Vinculação com o arquivo de estilos CSS externo -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Título personalizado e único -->
+    <title>Ação Coletiva: O Impacto da Empatia e Cooperação</title>
+
+    <!-- CSS Incorporado diretamente no HTML conforme solicitado -->
+    <style>
+        /* Reset Geral de Margens e Padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fcf8f2; /* Fundo suave levemente aquecido */
+            color: #2b2b2b;
+            line-height: 1.6;
+            padding: 30px 15px;
+        }
+
+        /* Limitador de largura centralizado (div container) */
+        .content-wrapper {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        /* Cabeçalho com o Vermelho como base principal e detalhes em Amarelo */
+        .main-header {
+            text-align: center;
+            background-color: #b91c1c; /* Vermelho escuro elegante */
+            color: #ffffff;
+            padding: 40px 20px;
+            border-radius: 12px;
+            margin-bottom: 35px;
+            border-bottom: 6px solid #eab308; /* Linha de destaque amarela */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .main-header h1 {
+            font-size: 2.6rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .main-header .tagline {
+            font-size: 1.1rem;
+            color: #fef08a; /* Amarelo claro para contraste legível */
+        }
+
+        /* Cards de Conteúdo Reorganizados com divs e imagens */
+        .info-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+            display: flex;
+            flex-wrap: wrap; /* Garante responsividade em telas menores */
+            align-items: center;
+            gap: 25px;
+        }
+
+        /* Estilização e limitação das 3 imagens solicitadas */
+        .card-image-box, .card-shadow-box {
+            flex: 1 1 250px;
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .info-card img {
+            width: 100%;
+            max-width: 280px;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 3px solid #f1f5f9;
+        }
+
+        .card-text-box {
+            flex: 2 1 350px;
+        }
+
+        /* Variações de bordas para individualizar os blocos */
+        .border-red { border-left: 6px solid #b91c1c; }
+        .border-yellow { border-left: 6px solid #eab308; }
+        .border-dark { border-left: 6px solid #451a03; }
+
+        /* Classes de Cores para Títulos */
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        .text-red { color: #b91c1c; }
+        .text-yellow { color: #ca8a04; } /* Tom de amarelo mais escuro para leitura no fundo branco */
+
+        /* Estilização da Lista Obrigatória (ul e li) */
+        .info-card ul {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .info-card li {
+            background-color: #fefce8; /* Fundo amarelo bem claro */
+            border-left: 4px solid #eab308;
+            margin-bottom: 8px;
+            padding: 12px 15px;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+
+        /* Rodapé e Links Customizados */
+        .main-footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px 0;
+            border-top: 2px solid #e2e8f0;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+
+        .footer-links {
+            margin-top: 15px;
+        }
+
+        /* Botões de links estilizados com vermelho e amarelo */
+        .footer-links a {
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+            color: #b91c1c;
+            background-color: #fef08a; /* Fundo amarelo */
+            padding: 10px 20px;
+            margin: 5px 10px;
+            border: 2px solid #eab308;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        /* Efeito Hover moderno invertendo as cores */
+        .footer-links a:hover {
+            background-color: #b91c1c;
+            color: #ffffff;
+            border-color: #b91c1c;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Container principal para centralizar e organizar o conteúdo -->
-    <div class="main-container">
+    <!-- Container geral para estruturação do layout -->
+    <div class="content-wrapper">
         
-        <!-- Cabeçalho principal da página -->
-        <div class="page-header">
-            <h1>Sinergia: O Impacto da Empatia e da Cooperação</h1>
-            <p>Como a sensibilidade humana e o trabalho coletivo transformam ambientes analógicos e digitais.</p>
+        <!-- Cabeçalho Principal (Cores quentes: Vermelho e Amarelo) -->
+        <div class="main-header">
+            <h1>Conexão e Impacto</h1>
+            <p class="tagline">Transformando a sociedade por meio da empatia e da cooperação mútua</p>
         </div>
 
-        <!-- Seção focada no conceito de Empatia -->
-        <div class="content-card empathy-card">
-            <h1>Empatia Proativa</h1>
-            <p>Empatia não é apenas lamentar a dor alheia, mas calibrar nossa perspectiva para enxergar o mundo com os olhos do outro. No ambiente de desenvolvimento e no cotidiano, isso se traduz em criar interfaces acessíveis, escrever códigos limpos para os próximos programadores e acolher dúvidas sem julgamentos.</p>
+        <!-- Seção 1: Empatia com Imagem Integrada -->
+        <div class="info-card border-red">
+            <div class="card-image-box">
+                <!-- Primeira imagem do projeto -->
+                <img src="imagem1.jpg" alt="Ilustração de Empatia e Apoio">
+            </div>
+            <div class="card-text-box">
+                <p class="card-title text-red">O Que é Empatia Ativa?</p>
+                <p>A empatia vai muito além de um sentimento passivo. Ela se consolida quando decidimos ouvir o outro sem julgamentos, buscando compreender suas dores e realidades particulares. Praticar a empatia limpa nossos filtros culturais e nos aproxima de soluções humanas reais.</p>
+            </div>
         </div>
 
-        <!-- Seção focada no conceito de Cooperação -->
-        <div class="content-card cooperation-card">
-            <h1>Cooperação Coletiva</h1>
-            <p>A cooperação une habilidades individuais em prol de um propósito maior. Nenhum grande software ou avanço social foi construído por uma única mente. Cooperar significa compartilhar conhecimento, aceitar feedbacks construtivos e entender que o sucesso do grupo supera o ego individual.</p>
+        <!-- Seção 2: Cooperação com Imagem Integrada -->
+        <div class="info-card border-yellow">
+            <div class="card-text-box">
+                <p class="card-title text-yellow">A Força da Cooperação</p>
+                <p>Cooperar significa entender que nenhum indivíduo constrói grandes marcos sozinho. Quando unimos habilidades diferentes em prol de um objective comum, os desafios complexos tornam-se simples. É a cooperação que solidifica comunidades e gera evolução contínua.</p>
+            </div>
+            <div class="card-shadow-box">
+                <!-- Segunda imagem do projeto -->
+                <img src="imagem2.jpg" alt="Trabalho em Equipe e Cooperação">
+            </div>
         </div>
 
-        <!-- Seção de exemplos práticos em lista -->
-        <div class="list-section">
-            <h1>Ações Práticas de Impacto</h1>
-            <p>Pequenas atitudes geram grandes ecossistemas de colaboração. Veja onde aplicar:</p>
-            <ul>
-                <li><strong>Escuta Ativa:</strong> Prestar atenção real antes de formular uma resposta.</li>
-                <li><strong>Comunidades Open Source:</strong> Contribuir para códigos que ajudam o mundo todo.</li>
-                <li><strong>Mentoria Reversa:</strong> Troca de experiências entre profissionais novos e seniores.</li>
-                <li><strong>Comunicação Não-Violenta:</strong> Resolver conflitos com foco na solução, não no ataque.</li>
-            </ul>
+        <!-- Seção 3: Lista de Exemplos com Imagem Integrada -->
+        <div class="info-card border-dark">
+            <div class="card-image-box">
+                <!-- Terceira imagem do projeto -->
+                <img src="imagem3.jpg" alt="Exemplos Práticos e Conexão">
+            </div>
+            <div class="card-text-box">
+                <p class="card-title text-red">Ações Práticas Para o Dia a Dia</p>
+                <p>Grandes mudanças começam com pequenas posturas consistentes no cotidiano. Veja como aplicar:</p>
+                
+                <!-- Lista desordenada exigida pelas diretrizes do trabalho -->
+                <ul>
+                    <li><strong>Escuta sem Interrupções:</strong> Dedicar atenção exclusiva ao interlocutor.</li>
+                    <li><strong>Divisão Justa de Tarefas:</strong> Apoiar colegas em projetos acadêmicos ou profissionais.</li>
+                    <li><strong>Comunicação Gentil:</strong> Substituir acusações por diálogos construtivos.</li>
+                    <li><strong>Apoio Comunitário:</strong> Participar de iniciativas de ajuda humanitária locais.</li>
+                </ul>
+            </div>
         </div>
 
-        <!-- Rodapé com os links externos personalizados -->
-        <div class="page-footer">
-            <p>Explore mais sobre inteligência social e colaborativa:</p>
-            <div class="links-group">
-                <a href="https://unicef.org" target="_blank">Projetos de Cooperação Global</a>
-                <a href="https://github.com" target="_blank">Colabore no GitHub Open Source</a>
+        <!-- Rodapé do site com links personalizados -->
+        <div class="main-footer">
+            <p>Página criada para fins acadêmicos e de conscientização social.</p>
+            <div class="footer-links">
+                <!-- Links externos estilizados com a paleta proposta -->
+                <a href="https://unicef.org" target="_blank">Ações Culturais UNICEF</a>
+                <a href="https://github.com" target="_blank">Acesse meu GitHub</a>
             </div>
         </div>
 
